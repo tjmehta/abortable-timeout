@@ -1,11 +1,11 @@
-# Name
+# abortable-timeout
 
-Description
+abortable timeout promise via abortsignals
 
 # Installation
 
 ```sh
-npm i --save node-module-template
+npm i --save abortable-timeout
 ```
 
 # Usage
@@ -14,9 +14,30 @@ npm i --save node-module-template
 
 ```js
 // esm
-import nmt from 'node-module-template`
+import timeout from 'abortable-timeout`
 // commonjs
-const nmt = require('node-module-template')
+const timeout = require('abortable-timeout').default
+```
+
+#### Example
+
+```js
+import timeout from 'abortable-timeout`
+
+const controller = new AbortController()
+const signal = controller.signal
+
+try {
+  await timeout(1000, signal)
+} catch(err) {
+  if (err.name === 'AbortError') {
+    console.warn('aborted')
+    return
+  }
+  throw err
+}
+
+controller.abort()
 ```
 
 # License

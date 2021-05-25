@@ -1,7 +1,7 @@
 {
-  "name": "node-module-template",
+  "name": "abortable-promise",
   "version": "0.0.0",
-  "description": "Description",
+  "description": "abortable timeout promise",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "scripts": {
@@ -11,24 +11,38 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tjmehta/node-module-template.git"
+    "url": "git+https://github.com/tjmehta/abortable-promise.git"
   },
   "keywords": [
+    "timeout",
+    "promise",
+    "thenable",
+    "async",
+    "setTimeout",
+    "abort",
+    "controller",
+    "signal",
+    "cancel"
   ],
   "author": "Tejesh Mehta",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tjmehta/node-module-template/issues"
+    "url": "https://github.com/tjmehta/abortable-promise/issues"
   },
-  "homepage": "https://github.com/tjmehta/node-module-template#readme",
+  "homepage": "https://github.com/tjmehta/abortable-promise#readme",
   "devDependencies": {
     "@babel/preset-env": "^7.10.2",
     "@babel/preset-typescript": "^7.10.1",
     "@types/jest": "^25.2.3",
     "babel-core": "^6.26.3",
     "babel-jest": "^26.0.1",
+    "fast-abort-controller": "^1.0.0",
     "jest": "^26.0.1",
     "prettier": "^2.0.5",
     "typescript": "^3.9.3"
+  },
+  "dependencies": {
+    "race-abort": "^2.0.0",
+    "timeout-then": "^2.0.0"
   }
 }
