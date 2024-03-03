@@ -1,6 +1,6 @@
 {
   "name": "abortable-timeout",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "abortable timeout promise",
   "main": "dist/cjs/index.cjs",
   "module": "dist/esm/index.mjs",
