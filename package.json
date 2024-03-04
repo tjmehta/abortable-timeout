@@ -52,7 +52,7 @@
     "typescript": "^3.9.3"
   },
   "dependencies": {
-    "race-abort": "^2.0.0",
+    "race-abort": "^3.0.0",
     "timeout-then": "^2.0.0"
   }
 }
