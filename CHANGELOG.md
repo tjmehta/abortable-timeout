@@ -1,3 +1,7 @@
+# v3.0.0
+
+- major: es2020
+
 # v2.0.1
 
 - patch: package.json types
