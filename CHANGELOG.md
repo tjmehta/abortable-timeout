@@ -1,3 +1,7 @@
+# v3.0.2
+
+- patch: race-abort update
+
 # v3.0.1
 
 - patch: race-abort update
