@@ -1,5 +1,9 @@
 # v3.0.2
 
+- patch: fix build files for exports
+
+# v3.0.2
+
 - patch: race-abort update
 
 # v3.0.1
