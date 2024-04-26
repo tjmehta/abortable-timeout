@@ -1,3 +1,7 @@
+# v3.0.5
+
+- patch: fix types exports
+
 # v3.0.4
 
 - patch: fix build files for exports
